@@ -1,0 +1,1102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none; /* Prevent text selection */
+}
+
+body {
+  font-size: 0.8vw;
+  font-family: "Montserrat";
+}
+.Container {
+	background-color: rgba(0, 0, 0, 0.39);
+width: 100%;
+height: 100%;
+position: absolute;
+}
+
+.menu {
+  position: absolute;
+  /* width: 40vw;
+  height: 30vw; */
+  width: 30vw;
+  height: 8.5vw;
+ /* background-color: rgba(225, 225, 225, 0.2); */
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+ /* box-shadow: .0vw .0vw .5vw black; */
+  border-radius: 0.4vw;
+}
+
+.gangCreator {
+  position: absolute;
+  width: 40vw;
+  height: 30vw;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 0.4vw;
+}
+
+.gangCreator h1 {
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 0.5vw;
+  text-transform:uppercase;
+}
+
+.menu h1 {
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  text-transform:uppercase;
+  padding: 0.5vw;
+  /* text-shadow: 0vw 0vw 0.5vw black; */
+}
+
+.contButtons {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  /* left: 5.6vw;
+  top: 4vw;
+  background-color: red; */
+}
+
+.boton {
+  border-left: 0.3vw solid #ed0000;
+  /* box-shadow: 0vw 0vw 0.2vw #ed0000; */
+  margin: 0.5vw;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.13);
+  display: inline-block;
+}
+
+.contButtons h1 {
+  font-size: 1vw;
+  text-transform:uppercase;
+}
+
+.boton:hover {
+  cursor: pointer;
+/*  transform: scale(1.1); */
+box-shadow: 0 0 10px -5px red;
+}
+
+.user-box {
+  position: relative;
+  left: 3vw;
+  top: 2vw;
+}
+
+.user-box input {
+  width: 30%;
+  padding: 0.5vw 0;
+  font-size: 0.8vw;
+  color: #fff;
+  margin-bottom: 1.5vw;
+  border: none;
+  border-bottom: 1px solid #f00;
+  outline: none;
+  background: transparent;
+}
+.user-box label {
+  position: absolute;
+  top: -1.5vw;
+  /* text-shadow: 0vw 0vw 0.5vw white; */
+  left: 0;
+  padding: 0.5vw 0;
+  font-size: 0.7vw;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.contOptions label {
+  margin-left: 0.5vw;
+  font-size: 0.7vw;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:active ~ label{
+  text-shadow: .0vw .0vw .5vw white;
+}
+
+.rightSideLogo {
+  position: absolute;
+  right: 5%;
+  width: 40%;
+  /* background-color: red; */
+  height: 70%;
+  top: 15%;
+}
+
+.rightSideLogo img {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.inputColorxD {
+  position: absolute;
+  bottom: 0vw;
+}
+
+.inputColorxD input {
+  -webkit-appearance: none;
+  width: 3vw;
+  height: 2vw;
+  margin: 0vw .1vw 0vw .1vw;
+  border: .1vw solid #ff000050;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 120px;
+	height: 18px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+.inputColorxD label {
+  font-size: .8vw;
+  color: white;
+}
+
+.leftSideOptions {
+  position: absolute;
+  left: 2vw;
+  bottom: 1vw;
+  width: 40%;
+  height: 40%;
+}
+
+.leftSideOptions h4 {
+  font-size: 1vw;
+  color: white;
+  text-align: center;
+}
+
+.contOptions {
+  position: absolute;
+  top: 60%;
+  right: 50%;
+  /* background-color: red; */
+  width: 80%;
+  height: 80%;
+  transform: translate(50%, -50%);
+}
+
+/* Checkbox */
+
+.lite-x-red {
+  background-image: url(https://cdn.discordapp.com/attachments/937063390961074226/965195025073987614/lite-x-red.png);
+}
+
+.contOptions label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type="checkbox"].css-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+input[type="checkbox"].css-checkbox + label.css-label {
+  padding-left: 20px;
+  height: 15px;
+  display: inline-block;
+  line-height: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: .8vw;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input[type="checkbox"].css-checkbox:checked + label.css-label {
+  background-position: 0 -15px;
+}
+
+.css-label {
+  background-image: url(https://cdn.discordapp.com/attachments/967779901899964478/967817064435834950/foto.png);
+}
+
+
+.separatorxD {
+  margin: .5vw;
+}
+
+.butonPe {
+  background-color: rgba(255, 0, 0, 0.59);
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  border-radius: .2vw;
+  bottom: 0px;
+}
+
+.butonPe:hover {
+  cursor: pointer;
+  box-shadow: .0vw .0vw .3vw #ff0000;
+}
+
+.butonPe h1 {
+  padding: .5vw;
+  font-size: .7vw;
+  text-transform:uppercase;
+  text-align: center;
+}
+
+
+
+.menuGangsters {
+  position: absolute;
+  right: 5vw;
+  bottom: 3vw;
+  width: 15vw;
+  height: 16vw;
+  background-color: rgba(21, 21, 21, 0.59);
+  border-radius: .5vw;
+}
+
+.menuGangsters h1 {
+  color: white;
+  text-transform:uppercase;
+  font-size: 1vw;
+  text-align: center;
+  padding: .5vw;
+}
+
+.containerOptions {
+  position: absolute;
+  /* background-color: red; */
+  width: 90%;
+  height: 80%;
+  transform: translate(50%, -50%);
+  top: 54%;
+  right: 50%;
+}
+
+.OptionxD {
+  position: relative;
+  width: 90%;
+  left: .6vw;
+  height: fit-content;
+  background-color: rgba(255, 0, 0, 0.59);
+  border-radius: .3vw;
+  margin-top: .8vw;
+
+}
+
+.OptionxD h1 {
+  font-size: .8vw;
+  text-align: center;
+  padding: .5vw;
+}
+
+.OptionxD:hover {
+  cursor: pointer;
+  
+  box-shadow: .0vw .0vw .3vw #ff0000;
+}
+
+.GangManager {
+  position: absolute;
+  width: 40vw;
+  height: 30vw;
+  /* background-color: rgba(0, 0, 0, 0.616); */
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 0.4vw;
+}
+
+.GangManager h1 {
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 0.5vw;
+  text-transform:uppercase;
+ /* text-shadow: 0vw 0vw 0.5vw black; */
+}
+
+.centerSearch {
+  position: absolute;
+  width: 50%;
+  /* background-color: red; */
+  height: 10%;
+  right: 45%;
+  top: 2vw;
+  transform: translateX(50%);
+}
+
+#gangSearch {
+  left: 11vw;
+  top: 0vw;
+  font-size: 1.2vw;
+}
+
+#gangSearchMember {
+  left: 10vw;
+  top: 0vw;
+  font-size: 1.2vw;
+}
+
+#PutCars {
+  right: 40vw;
+  top: 0vw;
+  font-size: 1.2vw;
+}
+
+#searchGangs {
+  width: 50%;
+}
+
+#searchPp {
+  width: 50%;
+}
+
+
+.ContainerGangsSearch {
+  position: absolute;
+  /* background-color: red; */
+  width: 80%;
+  height: 70%;
+  top: 60%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  overflow-y: auto;
+}
+
+.GangInfos {
+  /* background-color: blue; */
+  /* box-shadow: .0vw .0vw .2vw rgb(255, 255, 255); */
+  border-radius: .3vw;
+  width: 30%;
+  height: auto;
+  display: inline-table;
+  margin: .2vw .2vw .2vw .2vw;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d8d8d83a;
+
+  border-radius: 0.5vw;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+
+  border-radius: 0.5vw;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+
+  border-radius: 0.5vw;
+}
+
+
+.GangInfos p {
+  color: white;
+  font-size: 1vw;
+  text-align: center;
+  padding: .5vw;
+}
+
+.GangInfos img {
+  width: 100%;
+  height: auto;
+  margin: auto auto;
+  cursor: pointer;
+}
+
+.ContainerOfGangs {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 52%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  overflow-y: auto;
+}
+
+.leftSideGangs {
+  width: 100%;
+  left: 2%;
+}
+
+.OptionsOfManageGangs {
+  width: 85%;
+  height: 15%;
+  margin: 1vw;
+}
+
+.OptionsOfManageGangs h1 {
+  font-size: 1.0vw;
+  text-align: left;
+  /* padding: 1vw; */
+  text-transform:uppercase;
+  display: inline-block;
+}
+
+.OptionsOfManageGangs a {
+  text-decoration: none;
+  color: white;
+  font-size: .8vw;
+  text-align: right;
+  padding: .5vw;
+  border-radius: .3vw;
+  background-color: rgba(255, 0, 0, 0.59);
+}
+
+.OptionsOfManageGangs a:hover {
+  cursor: pointer;
+  box-shadow: .0vw .0vw .3vw #ff0000;
+}
+
+#bossPoint {
+  margin-left: 1.1vw;
+}
+
+.ButtonSave {
+  width: fit-content;
+  height: 2vw;
+  margin-top:40px;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: rgba(255, 0, 0, 0.59);
+  border-radius: .3vw;
+  cursor: pointer;
+  margin-left: 33.2%;
+}
+
+.ButtonSave:hover {
+  cursor: pointer;
+  box-shadow: .0vw .0vw .3vw #ff0000;
+}
+
+.ButtonSave h1 {
+  font-size: .8vw;
+  text-align: center;
+  padding: .5vw;
+  text-shadow: 0vw 0vw 0.5vw black;
+  padding: .5vw;
+}
+
+.BossMenu {
+  position: absolute;
+  width: 18vw;
+  height: 30vw;
+  background-color: rgba(0, 0, 0, 0.499);
+  border-radius: .4vw;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2vw;
+  box-shadow: .0vw .0vw .5vw black;
+}
+
+.BossMenu h1 {
+  padding: .2vw;
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  
+}
+
+#contSearch {
+  top: 0vw;
+}
+
+#carsSearch {
+  top: 1vw;
+  left: 0vw;
+}
+
+#OutfitSearch {
+  top: 0vw;
+  left: 0vw;
+}
+
+.butonSaveCar {
+  top: 1vw;
+  font-weight:800;
+}
+
+.butonSaveCar:hover {
+  cursor: pointer;
+  box-shadow: .0vw .0vw .3vw #ff0000;
+}
+
+.butonSeparadorxD {
+  top: 1vw;
+  left: 0vw;
+  font-weight:800;
+}
+.butonSeparadorxD:hover {
+	
+  box-shadow: .0vw .0vw .3vw #ff0000;
+}
+
+#searchMember {
+  left: 8vw;
+}
+
+#searchMembers {
+  width: 85%;
+}
+
+#searchCars {
+  width: 85%;
+}
+
+.alcentro {text-align: center;}
+
+.ContGangMembers {
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  top: 56%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  /* background-color: red; */
+  overflow-y: auto;
+
+}
+
+.MemberGang {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: auto;
+  /* background-color: blue; */
+  background-color: rgb(114, 0, 0);
+  border-radius: .2vw;
+  box-shadow: .0vw .0vw .5vw black;
+  margin-top: .5vw;
+}
+
+.MemberGang h1 {
+  padding: .5vw .0vw .5vw .0vw;
+  font-size: .8vw;
+}
+
+.MemberGang:hover {
+  border: .1vw solid white;
+  cursor: pointer;
+}
+
+.GarageMenu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: .4vw;
+  box-shadow: .0vw .0vw .5vw black;
+}
+
+.GarageMenu h1 {
+  padding-top: 3.2vw;
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  
+}
+
+.vehicle-list {
+  position: absolute;
+  width: 50%;
+  height: 85%;
+  top: 55%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  overflow-y: auto;
+  border-radius: .3vw;
+  /* background-color: aqua; */
+}
+
+.vehicle-append {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  /* background-color: blue; */
+  background-color: rgba(57, 57, 57, 0.45);
+  border-radius: .3vw;
+  /* box-shadow: .0vw .0vw .5vw black; */
+  margin-top: 1vw;
+  display: flow-root;
+}
+
+.izquierda {width:40%;float:left;}
+.derecha {width:40%;float:right;}
+.abajo {width:80%;display:block}
+
+.vehicle-append h2 {
+  padding: 1.05vw;
+  color: white;
+  font-size: 1.4vw;
+  text-align: left;
+  float:left;
+  
+}
+
+.vehicle-append input[type="button"] {
+  background-color: black;
+  border-radius: .3vw;
+  cursor: pointer;
+  float:right;
+  margin: 0!important;
+  font-size: 1.2vw!important;
+  padding: 1.23vw;
+}
+
+.selectVehicle {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  top: 55%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  overflow-y: auto;
+  border-radius: .3vw;
+  background-color: aqua;
+}
+
+.ModalForMembers {
+  position: absolute;
+  width: 30vw;
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: .4vw;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  padding-bottom: 10px;
+}
+
+.ModalForMembers h1 {
+  color: white;
+  font-size: .9vw;
+  text-align: center;
+  
+  padding: .5vw;
+}
+
+select {
+  margin-top: .5vw;
+  width: fit-content;
+  border-radius: .2vw;
+  box-shadow: .0vw .0vw .5vw black;
+  background-color: rgb(0, 0, 0);
+  
+  color: white;
+  border: none;
+  outline: none;
+}
+
+input[type=button] {
+  width: fit-content;
+  color: white;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.59);
+  outline: none;
+ font-size: .8vw;
+text-align: right;
+padding: .5vw;
+border-radius: .3vw;
+background-color: rgba(255, 0, 0, 0.59);
+}
+
+input[type=button]:hover {
+  cursor: pointer;
+  /* border: .1vw solid white; */
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+
+
+
+.rightSideGang {
+  position: absolute;
+  right: 0vw;
+  top: 0vw;
+  width: 40%;
+  height: 100%;
+}
+
+.verde {
+  background-color: green;
+}
+
+.NotificationError {
+  position: absolute;
+  width: 15vw;
+  max-width: 20vw;
+  height: 70%;
+  top: 0vw;
+  right: -16vw;
+  z-index: -20;
+}
+
+.notify-append {
+  position: relative;
+  height: fit-content;
+  min-height: 2vw;
+  width: 14vw;
+  max-width: fit-content;
+  margin-top: 0.5vw;
+  border-radius: 0.4vw;
+  background-color: rgb(114, 0, 0);
+  box-shadow: .0vw .0vw .5vw black;
+}
+
+.notify-append h1 {
+  font-size: 1vw;
+  padding: 0vw;
+  margin: 0vw;
+}
+
+.notify-append p {
+  font-size: .6vw;
+  color: white;
+  
+  padding: .5vw;
+}
+
+.ArmarioOutfits {
+  position: absolute;
+  height: 32vw;
+  width: 18vw;
+  /* background-color: rgb(114, 0, 0); */
+
+  right: 2vw;
+  top: 10vw;
+}
+
+.ArmarioOutfits img {
+  margin-top: 1vw;
+  width: 100%;
+  height: auto;
+}
+
+.ArmarioOutfits h1 {
+  color: white;
+  font-size: 1.4vw;
+  
+  text-align: center;
+}
+
+.ArmarioContainer {
+  position:absolute;
+  width: 58%;
+  height: 57%;
+  top: 36%;
+  right: 51%;
+  transform: translate(50%, -50%);
+  /* background-color: black; */
+  overflow-y: auto;
+}
+
+.ContRopa {
+  width: 90%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.488);
+  margin: .5vw;
+}
+
+.ContRopa h1 {
+  padding: .2vw;
+  font-size: .7vw;
+}
+
+.outfith1 {
+  font-size: .2vw;
+  text-align:left;
+}
+
+.ContRopa:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.ReclutMembers {
+  position: absolute;
+  width: 17vw;
+  height: 30vw;
+  right: 1vw;
+  top: 12vw;
+  border-radius: .4vw;
+  background-color: rgba(0, 0, 0, 0.39);
+}
+
+.ReclutMembers h1 {
+  color: white;
+  font-size: 1vw;
+  text-transform:uppercase;
+  text-align: center;
+  padding: .5vw;
+}
+
+.contPlayersNews {
+  position:absolute;
+  width: 90%;
+  height: 78%;
+  transform: translate(50%, -50%);
+  top: 58%;
+  right: 50%;
+  /* background-color: rgba(0, 0, 0, 0.488); */
+}
+
+.PlayerInfoxD {
+  position: relative;
+  width: 90%;
+  height: fit-content;
+  padding: .2vw;
+  background-color: rgba(255, 0, 0, 0.59);
+  margin: .5vw;
+  border-radius: .2vw;
+}
+
+.PlayerInfoxD h1 {
+  font-size: .7vw;
+  color: white;
+  text-align: center;
+}
+
+.PlayerInfoxD:hover {
+  cursor: pointer;
+}
+
+
+.ModalForNewMembers {
+  position: absolute;
+  width: 27vw;
+  height: 7vw;
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: .4vw;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.ModalForNewMembers h1 {
+  color: white;
+  font-size: .9vw;
+  text-align: center;
+  
+  padding: .5vw;
+}
+
+.ModalAcceptOrNot {
+  position: absolute;
+  width: 30vw;
+  height: 6vw;
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: .4vw;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.aceptarODenegar {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: rgb(0, 8, 255);
+  box-shadow: .0vw .0vw .5vw black;
+  border-radius: .4vw;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.AlignVertically {
+  position: absolute;
+  right: 50%;
+  top: 65%;
+  transform: translate(50%, -50%);
+}
+
+.ModalAcceptOrNot h1 {
+  padding: .2vw;
+  font-size: 1.2vw;
+  color: white;
+  text-align: center;
+}
+
+.butonAccept:hover {
+  cursor: pointer;
+}
+
+.butonDenied:hover {
+  cursor: pointer;
+}
+
+
+.peneLargo img {
+  width: 10%;
+  height: auto;
+}
+
+.idCard {
+  position: absolute;
+  right: 3vw;
+  top: 15vw;
+  width: 25vw;
+  height: 15vw;
+}
+
+.flurpee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  border-radius: .5vw;
+  filter: blur(.2vw);
+}
+
+.cabezita {
+  position: absolute;
+  width: 100%;
+  height: 2.5vw;
+  /* background-color: red; */
+}
+
+.cabezita h1 {
+  padding: .5vw;
+  font-size: .9vw;
+  color: white;
+  z-index: 1; 
+  
+  text-align: center;
+  text-shadow: .0vw .0vw .5vw black;
+}
+
+.AllContEnido {
+  position: absolute;
+  width: 100%;
+  height: 12vw;
+  top: 2.8vw;
+  /* background-color: rgb(255, 0, 0); */
+}
+
+.leftSideIdentity {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.rightSideIdentity {
+  position: absolute;
+  width: 65%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  /* background-color: rgb(89, 0, 255); */
+}
+
+.FotoIdentity {
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  top: 40%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: .4vw;
+}
+
+.FotoIdentity img {
+  width: 100%;
+  height: 100%;
+  border-radius: .4vw;
+  border: .1vw solid white;
+}
+
+.rightSideIdentity h6 {
+  padding: .2vw;
+  font-size: .8vw;
+  color: rgb(255, 255, 255);
+  
+  text-align: left;
+  text-shadow: .0vw .0vw .5vw black;
+}	
+
+.rightSideIdentity p {
+  margin: .2vw .0vw .2vw .0vw;
+  padding: .2vw;
+  font-size: .6vw;
+  color: rgba(255, 255, 255, 0.452);
+  
+  text-align: left;
+  text-shadow: .0vw .0vw .5vw black;
+}
+
+.WaterMark {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  bottom: 0vw;
+  right:0vw;
+}
+
+.WaterMark img {
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+}

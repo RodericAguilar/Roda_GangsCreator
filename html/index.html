@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"><link href='https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@18657a9/css/all.min.css' rel='stylesheet' type='text/css'/>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+        <script src="app.js"></script>
+        <title>Roda Gangs Creator</title>
+    </head>
+    <body>
+        <div class="Container" style="display: none;">
+            <div class="menu">
+                <h1>Roda Gangs Creator</h1>
+                <div class="contButtons">
+                    <center>
+                        <div class="boton" id="manageGangs">
+                            <h1> <i class="fa-regular fa-gears"></i> Manage Gangs</h1>
+                        </div>
+                        <div class="boton" id="createGangs">
+                            <h1> <i class="fa-regular fa-circle-plus"></i> Create Gang</h1>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <div class="gangCreator" style="display: none;">
+                <h1>Create Gang</h1>
+                <div class="user-box">
+                    <input type="text" id="gangName">
+                    <label id="gangNameVal">Gang Name (lowercase)</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" id="gangLabel">
+                    <label id="gangLabelVal">Gang Label</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" id="gangLogo">
+                    <label id="gangLogoVal">Gang Logo</label>
+                </div>
+                <div class="rightSideLogo">
+                    <img src="https://cdn.discordapp.com/attachments/930160016525250621/951189780601925642/rodalogo.png" onerror="javascript:imgError(this)" alt="">
+                    <div class="inputColorxD">
+                        <label for="">Gang Color</label> <input id="gangcolorxd" type="color" name="" id="">
+                    </div> 
+                </div>
+                <div class="leftSideOptions">
+                    <h4>Options</h4>
+                    <div class="contOptions">
+                        <input type="checkbox" class="css-checkbox" id="checkbox10" />
+                        <label for="checkbox10" name="checkbox10_lbl" class="css-label lite-x-red">Handcuff</label>
+                        <div class="separatorxD"></div>
+                        <input type="checkbox" class="css-checkbox" id="checkbox11" />
+                        <label for="checkbox11" name="checkbox10_lbl" class="css-label lite-x-red">Search</label>
+                        <div class="separatorxD"></div>
+                        <input type="checkbox" class="css-checkbox" id="checkbox12" />
+                        <label for="checkbox12" name="checkbox10_lbl" class="css-label lite-x-red">Drag</label>
+                        <div class="separatorxD"></div>
+                        <input type="checkbox" class="css-checkbox" id="checkbox13" />
+                        <label for="checkbox13" name="checkbox10_lbl" class="css-label lite-x-red">Get Identity</label>
+                        <div class="separatorxD"></div>
+                        <br>
+                    </div>
+                </div>
+				
+                        <div class="butonPe">
+                            <h1>Make Gang!</h1>
+                        </div>
+            </div>
+            <div class="GangManager" style="display: none;">
+                <h1 class="setText">Manage Current Gangs!</h1>
+                <div class="centerSearch">
+                    <div class="user-box">
+                        <input type="text" placeholder="Search Gang" id="searchGangs">
+                        <label id="gangSearch"><i class="far fa-search"></i></label>
+                        
+                    </div>
+                </div>
+                <div class="ContainerGangsSearch">
+                    <!-- <div class="GangInfos">
+                        <p>Gang1</p>
+                        <center>
+                        <img src="https://cdn.discordapp.com/attachments/937063390961074226/965572182761693184/PngItem_530554.png" alt="">
+                        </center>
+                    </div> -->
+
+                </div>
+                <input type="hidden" name="" id="putitainvisible">
+                <input type="hidden" name="" id="putitainvisible2">
+                <input type="hidden" name="" id="putitainvisible3">
+                <input type="hidden" name="" id="putitainvisible4">
+                <div class="ContainerOfGangs" style="display: none;">
+                    <div class="leftSideGangs">
+                        <div class="OptionsOfManageGangs">
+                            <h1>Make Clothes Point</h1> <a id="createClothes" href="#" style="float:right;">CREATE</a>
+                        </div>
+                        <div class="OptionsOfManageGangs">
+                            <h1>Make Deposit Point</h1><a id="createDeposit" href="#" style="float:right;">CREATE</a>
+                        </div>
+                        <div class="OptionsOfManageGangs">
+                            <h1>Make Garage Point</h1><a id="vehicleDeposit" href="#" style="float:right;">CREATE</a>
+                        </div>
+                        <div class="OptionsOfManageGangs">
+                            <h1>Make Boss Point</h1><a id="bossPoint" href="#" style="float:right;">CREATE</a>
+                        </div>
+                    </div>
+
+                    <div class="leftSideGangs alcentro">
+                        <div class="user-box" id="carsSearch">
+                            <input type="text" class="vehicleLabelSearch" placeholder="Vehicle Label" id="searchCars">
+                        </div>
+                        <div class="user-box" id="carsSearch">
+                            <input type="text" class="vehicleNameSearch" placeholder="Vehicle Name" id="searchCars">
+                        </div>
+                        <br>
+                        <input type="button" value="SAVE CAR" class="butonSaveCar">
+                        <br><br>
+                        <h1 class="outfith1">OUTFIT</h1>
+                        <div class="user-box" id="OutfitSearch">
+                            <input type="text" class="outfitLabelSave" placeholder="Label Oufit" id="searchCars">
+                        </div>
+                        <input type="button" value="MAKE MALE OUTFIT" class="butonSeparadorxD savemale"> 
+                        <br><br> 
+                        <input type="button" value="MAKE FEMALE OUTFIT" class="butonSeparadorxD savefemale">
+						
+						
+                    <div class="ButtonSave" id="savePoints">
+                        <h1>Save Points</h1>
+                    </div>
+					
+                    </div>
+					
+					
+                </div>
+                <div class="NotificationError">
+                </div>
+            </div>
+        </div>
+        <div class="menuGangsters" style="display: none;">
+            <h1 class="gangNameXD">Gang 3</h1>
+            <div class="containerOptions">
+               <!--  <div class="OptionxD">
+                    <h1>Drag</h1>
+                </div>
+                <div class="OptionxD">
+                    <h1>Handcuff</h1>
+                </div>
+                <div class="OptionxD">
+                    <h1>Search</h1>
+                </div>
+                <div class="OptionxD">
+                    <h1>Request Support</h1>
+                </div> -->
+            </div>
+        </div>
+        <div class="BossMenu" style="display: none;">
+            <h1>Boss Menu</h1>
+            <div class="user-box" id="contSearch">
+                <input type="text" placeholder="Search Member" id="searchMembers">
+                <label id="gangSearchMember"><i class="far fa-search"></i></label>
+            </div>
+            <div class="ContGangMembers">
+                <!-- <div class="MemberGang">
+                    <h1>Roderic Puto</h1>
+                </div> -->
+
+            </div>
+        </div>
+        <div class="GarageMenu" style="display: none;">
+            <h1>Garage Menu</h1>
+            <div class="vehicle-list">
+                <!-- <div class="vehicle-append">
+                    <h2>Sultan Classic (sultan2)</h2>
+                    <input type="button" value="Sacar">
+                </div>
+                <div class="vehicle-append">
+                    <h2>Sultan Classic (sultan2)</h2>
+                    <input type="button" value="Sacar">
+                </div>  -->
+            </div>
+        </div>
+        <div class="ModalForMembers" style="display: none;">
+            <h1 id="updateUserName">Manage Roderic</h1>
+            <center>
+            <select name="" id="ListaDeUsuariosXD">
+                <option value="null">Select an option</option>
+                <option value="0">Reclute</option>
+                <option value="1">Gang</option>
+                <option value="2">Sub Boss</option>
+            </select>
+            <input type="button" value="Set Range" class="butonSendBoss">
+            </center>
+            <br>
+            <center> 
+                <input type="button" value="Fire Member" class="butonFire">
+            </center>
+  
+        </div>
+        <div class="ArmarioOutfits" style="display:none">
+            <img src="https://cdn.discordapp.com/attachments/930160016525250621/966758239888883772/armario.png" alt="">
+            <div class="ArmarioContainer">
+                <!-- <div class="ContRopa">
+                    <h1>Ropa Pendeja</h1>
+                </div>
+                <div class="ContRopa">
+                    <h1>Ropa Pendeja</h1>
+                </div> -->
+
+            </div>
+        </div>
+        <div class="ReclutMembers" style="display: none;">
+            <h1>Reclute New Member</h1>  
+            <div class="user-box" style="left: 1vw; top:0vw;">
+                <input type="text" placeholder="Search User" id="searchPp">
+            </div>
+            <div class="contPlayersNews">
+                <div class="PlayerInfoxD">
+                    <h1>Roderic [1]</h1>
+                </div> 
+            </div>
+        </div>
+        <div class="ModalForNewMembers" style="display: none;">
+            <h1 id="updateUserNewName">Manage Roderic</h1>
+            <center>
+            <select name="" id="ListaDeUsuariosNewsXD">
+                <option value="null">Select an option</option>
+                <option value="0">Reclute</option>
+                <option value="1">Gang</option>
+                <option value="2">Sub Boss</option>
+            </select>
+            <input type="button" value="Set Range" class="butonSendNewMember">
+            </center>
+        </div>
+        <div class="ModalAcceptOrNot" style="display:none;">
+            <h1>Hola </h1>
+            <input type="hidden" name="" class="putitoInvisible">
+            <input type="hidden" name="" class="putitoInvisible2">
+            <input type="hidden" name="" class="putitoInvisible3">
+            <input type="hidden" name="" class="putitoInvisible4">
+            <div class="AlignVertically">
+                <input type="button" value="Accept" class="butonAccept">
+                <input type="button" value="Denied" class="butonDenied">
+            </div>
+        </div>
+        <div class="idCard" style="display: none;">
+            <div class="flurpee">
+            </div>
+            <div class="cabezita">
+                <h1>Roda Identity</h1>
+            </div>
+            <div class="AllContEnido">
+                <div class="leftSideIdentity">
+                    <div class="FotoIdentity">
+                        <img src="https://cdn.discordapp.com/attachments/966396276654608404/966409814605459517/sultan2.webp" alt="">
+                    </div>
+                </div>
+                <div class="rightSideIdentity">
+                    <h6>Firstname</h6>
+                    <p id="nameid">Roderic</p>
+                    <h6>Lastname</h6>
+                    <p id="apellidoid">Puto</p>
+                    <h6>Sex</h6>
+                    <p id="sexoid">M</p>
+                </div>
+            </div>
+            <div class="WaterMark">
+                <img src="https://cdn.discordapp.com/attachments/930160016525250621/951993812333527080/rodalogo-1.png" alt="">
+            </div>
+        </div>
+    </body>
+</html>
