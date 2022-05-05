@@ -67,7 +67,12 @@ end
 
 function GetAllGangs()
     local result = Query(Config.Db, 'fetchAll', "SELECT * FROM roda_gangs")
-    return result
+
+    if result then
+        return result
+    else
+        return false
+    end
 end
 
 function GetGangInfo(gang)
