@@ -16,12 +16,16 @@ AddEventHandler('onResourceStart', function(resourceName)
     local result = GetAllGangs()
 
     for i = 1, #result, 1 do
-        local decode = json.decode(result[i].points)
-        Wait(500)
-        table.insert(gangPoints, {gang = result[i].name, ganglabel = result[i].label, clothes = decode['clothes'], inventory = decode['inventario'], vehicle = decode['vehicle'], bossmenu = decode['boss']})
+        if result[i].points ~= nil then
+            local decode = json.decode(result[i].points)
+            Wait(500)
+            table.insert(gangPoints, {gang = result[i].name, ganglabel = result[i].label, clothes = decode['clothes'], inventory = decode['inventario'], vehicle = decode['vehicle'], bossmenu = decode['boss']})
 
-        if Config.Inventory == 'ox_inventory' then
-            exports.ox_inventory:RegisterStash(result[i].name.. '-stash', 'Inventory - ' ..result[i].label, 50, 100000, false)
+            if Config.Inventory == 'ox_inventory' then
+                exports.ox_inventory:RegisterStash(result[i].name.. '-stash', 'Inventory - ' ..result[i].label, 50, 100000, false)
+            end
+        else
+            print('^3[Roda_GangsCreator]^0 - ^1Gang ^2' .. result[i].name .. '^1 has no points.')
         end
     end
 
